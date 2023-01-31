@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCoin"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCoinShortName"
+        style="@style/CoinBitText.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="BTC"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCoin"
+        app:layout_constraintStart_toEndOf="@+id/imgCoin"
+        app:layout_constraintTop_toTopOf="@+id/imgCoin" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        style="@style/CoinBitText.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.125$"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCoinShortName"
+        app:layout_constraintEnd_toStartOf="@+id/txtIncreaseOrDecrease"
+        app:layout_constraintTop_toTopOf="@+id/txtCoinShortName" />
+
+    <TextView
+        android:id="@+id/txtMarketCap"
+        style="@style/CoinBitText.MarketCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.1B"
+        app:layout_constraintStart_toStartOf="@+id/txtCoinShortName"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoinShortName" />
+
+    <TextView
+        android:id="@+id/txtCounterNum"
+        android:layout_width="25dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text=""
+        android:textSize="10sp"
+        android:background="@drawable/shap_counter"
+        app:layout_constraintEnd_toEndOf="@+id/imgCoin"
+        app:layout_constraintStart_toStartOf="@+id/imgCoin"
+        app:layout_constraintTop_toBottomOf="@+id/imgCoin" />
+
+    <TextView
+        android:id="@+id/txtIncreaseOrDecrease"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="0.00%"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/shape_0"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCounterNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCoin" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/secondaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCounterNum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

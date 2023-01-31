@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/myToolbar"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="@color/white"
+        android:title="Crypto Coin"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    </Toolbar>
+
+    
+
+</com.google.android.material.appbar.AppBarLayout>
